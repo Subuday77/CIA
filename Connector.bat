@@ -25,7 +25,7 @@ echo Connected
 echo:
 echo Please enter your name
 set /p N=
-if /I %N% neq frank echo Error & 1>nul ping -n 2 127.1 && goto 2
+if /I "%N%" neq frank echo Error & 1>nul ping -n 2 127.1 && goto 2
 :3
 color 0a
 cls
